@@ -1,0 +1,987 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GR&R测量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cpandcpk.html" />
+    
+    
+    <link rel="prev" href="../.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kuai-su-ru-men.html">
+            
+                <a href="../kuai-su-ru-men.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../程序制作流程.html">
+            
+                <a href="../程序制作流程.html">
+            
+                    
+                    程序制作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../编程参考.html">
+            
+                <a href="../编程参考.html">
+            
+                    
+                    编程参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../编程参考/yuan.html">
+            
+                <a href="../编程参考/yuan.html">
+            
+                    
+                    制作常见元件检测库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../编程参考/制作常见元件检测库/制作电阻检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作电阻检测库.html">
+            
+                    
+                    制作电阻、电容检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../编程参考/制作常见元件检测库/制作mark检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作mark检测库.html">
+            
+                    
+                    制作mark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../编程参考/制作常见元件检测库/制作二极管检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作二极管检测库.html">
+            
+                    
+                    制作二极管检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../编程参考/制作常见元件检测库/制作三极管检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作三极管检测库.html">
+            
+                    
+                    制作三极管检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../编程参考/制作常见元件检测库/制作IC检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作IC检测库.html">
+            
+                    
+                    制作IC检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../编程参考/制作常见元件检测库/制作BGA检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作BGA检测库.html">
+            
+                    
+                    制作BGA检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../编程参考/制作常见元件检测库/制作BadMark检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作BadMark检测库.html">
+            
+                    
+                    制作BadMark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../编程参考/制作常见元件检测库/制作SideMark检测库.html">
+            
+                <a href="../编程参考/制作常见元件检测库/制作SideMark检测库.html">
+            
+                    
+                    制作SideMark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../编程参考/导入CAD.html">
+            
+                <a href="../编程参考/导入CAD.html">
+            
+                    
+                    导入CAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../编程参考/编辑CAD.html">
+            
+                <a href="../编程参考/编辑CAD.html">
+            
+                    
+                    编辑CAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../编程参考/整板侦测.html">
+            
+                <a href="../编程参考/整板侦测.html">
+            
+                    
+                    如何使用整板侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../编程参考/如何管理检测库.html">
+            
+                <a href="../编程参考/如何管理检测库.html">
+            
+                    
+                    如何管理检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../编程参考/多料号共用一料库.html">
+            
+                <a href="../编程参考/多料号共用一料库.html">
+            
+                    
+                    多料号共用一料库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../编程参考/如何使用电阻值识别算法.html">
+            
+                <a href="../编程参考/如何使用电阻值识别算法.html">
+            
+                    
+                    如何使用电阻值识别算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../图像处理/">
+            
+                <a href="../图像处理/">
+            
+                    
+                    图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../图像处理/IPE参考.html">
+            
+                <a href="../图像处理/IPE参考.html">
+            
+                    
+                    IPE参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../算法参考/README.md">
+            
+                <span>
+            
+                    
+                    算法参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../算法参考/圆侦测.html">
+            
+                <a href="../算法参考/圆侦测.html">
+            
+                    
+                    圆侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../算法参考/模板匹配.html">
+            
+                <a href="../算法参考/模板匹配.html">
+            
+                    
+                    模板匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../算法参考/最大值.html">
+            
+                <a href="../算法参考/最大值.html">
+            
+                    
+                    最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../算法参考/亮度抽取.html">
+            
+                <a href="../算法参考/亮度抽取.html">
+            
+                    
+                    亮度抽取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../算法参考/智能侦测.html">
+            
+                <a href="../算法参考/智能侦测.html">
+            
+                    
+                    智能侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../算法参考/智能判定.html">
+            
+                <a href="../算法参考/智能判定.html">
+            
+                    
+                    智能判定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../算法参考/最小值.html">
+            
+                <a href="../算法参考/最小值.html">
+            
+                    
+                    最小值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../算法参考/平均值.html">
+            
+                <a href="../算法参考/平均值.html">
+            
+                    
+                    平均值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../算法参考/极差值.html">
+            
+                <a href="../算法参考/极差值.html">
+            
+                    
+                    极差值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../算法参考/条码识别.html">
+            
+                <a href="../算法参考/条码识别.html">
+            
+                    
+                    条码识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../算法参考/字符识别.html">
+            
+                <a href="../算法参考/字符识别.html">
+            
+                    
+                    字符识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../算法参考/极性检测.html">
+            
+                <a href="../算法参考/极性检测.html">
+            
+                    
+                    极性检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../算法参考/字符验证.html">
+            
+                <a href="../算法参考/字符验证.html">
+            
+                    
+                    字符验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../算法参考/桥连侦测.html">
+            
+                <a href="../算法参考/桥连侦测.html">
+            
+                    
+                    桥连侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../算法参考/刮痕侦测.html">
+            
+                <a href="../算法参考/刮痕侦测.html">
+            
+                    
+                    刮痕侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../算法参考/相对偏移.html">
+            
+                <a href="../算法参考/相对偏移.html">
+            
+                    
+                    相对偏移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../算法参考/电阻值识别.html">
+            
+                <a href="../算法参考/电阻值识别.html">
+            
+                    
+                    电阻值识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../算法参考/整板侦测%28+%29.md">
+            
+                <span>
+            
+                    
+                    整板侦测(+)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="../算法参考/整板侦测%28-%29.html">
+            
+                <a href="../算法参考/整板侦测%28-%29.html">
+            
+                    
+                    整板侦测(-)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="../算法参考/共线性检测.html">
+            
+                <a href="../算法参考/共线性检测.html">
+            
+                    
+                    共线性检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="../算法参考/子元件生成.html">
+            
+                <a href="../算法参考/子元件生成.html">
+            
+                    
+                    子元件生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" data-path="../算法参考/计算值.html">
+            
+                <a href="../算法参考/计算值.html">
+            
+                    
+                    计算值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../用户与权限管理.html">
+            
+                <a href="../用户与权限管理.html">
+            
+                    
+                    用户与权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../.md">
+            
+                <span>
+            
+                    
+                    其它功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.7.1" data-path="GR&R测量.html">
+            
+                <a href="GR&R测量.html">
+            
+                    
+                    GR&R测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="cpandcpk.html">
+            
+                <a href="cpandcpk.html">
+            
+                    
+                    Cp&Cpk测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="停机报警.html">
+            
+                <a href="停机报警.html">
+            
+                    
+                    停机报警
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../.md">
+            
+                <span>
+            
+                    
+                    菜单项参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../菜单项参考/AOI主菜单.html">
+            
+                <a href="../菜单项参考/AOI主菜单.html">
+            
+                    
+                    AOI主菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../菜单项参考/主页选项卡.html">
+            
+                <a href="../菜单项参考/主页选项卡.html">
+            
+                    
+                    主页选项卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../使用维修工作站.md">
+            
+                <span>
+            
+                    
+                    使用维修工作站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../词汇表.html">
+            
+                <a href="../词汇表.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GR&R测量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="grr&#x6D4B;&#x91CF;">GR&amp;R&#x6D4B;&#x91CF;</h2>
+<p>GR&amp;R&#xFF08;Gauge Repeatability and Reproducibility&#xFF09;&#x6307;&#x201C;&#x6D4B;&#x91CF;&#x7CFB;&#x7EDF;&#x7684;&#x91CD;&#x590D;&#x6027;&#x548C;&#x590D;&#x73B0;&#x6027;&#x201D;&#xFF0C;&#x8868;&#x793A;&#x6D4B;&#x91CF;&#x7684;&#x91CD;&#x590D;&#x6027;&#xFF08;Repeatability&#xFF09;&#x4E0E;&#x518D;&#x751F;&#x6027;&#xFF08;Reproducibility&#xFF09;&#x3002; </p>
+<ul>
+<li>GRR &lt; = 10% &#xFF1A; &#x91CF;&#x5177;&#x7CFB;&#x7EDF;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#x3002;</li>
+<li>10% &lt; GRR &lt; = 30% &#xFF1A; &#x63A5;&#x53D7;&#x4E0E;&#x5426;&#x53D6;&#x51B3;&#x4E8E;&#x91CF;&#x5177;&#x7CFB;&#x7EDF;&#x91CD;&#x8981;&#x6027;&#x3002;</li>
+<li>GRR &gt; 30% &#xFF1A;&#x91CF;&#x5177;&#x7CFB;&#x7EDF;&#x4E0D;&#x8FBE;&#x6807;&#xFF0C;&#x5FC5;&#x987B;&#x52A0;&#x4EE5;&#x6539;&#x8FDB;&#x3002;</li>
+</ul>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x5BF9;&#x4E8E;AOI&#x8BBE;&#x5907;GR&amp;R&#x4E00;&#x822C;&#x8981;&#x6C42;&#x5728;30%&#x4EE5;&#x5185;&#xFF0C;&#x8FBE;&#x5230;10%&#x4E3A;&#x4F18;&#x79C0;&#x3002; </p>
+<h3 id="&#x6D4B;&#x91CF;&#x6B65;&#x9AA4;">&#x6D4B;&#x91CF;&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x9009;&#x7528;&#x4E00;&#x7247;PCB&#xFF08;&#x4E00;&#x822C;&#x9009;&#x7528;&#x5149;&#x677F;&#xFF09;&#x3002;</li>
+<li>&#x65B0;&#x5EFA;&#x7A0B;&#x5F0F;&#xFF0C;&#x547D;&#x540D;GRR&#x3002;</li>
+<li>&#x5236;&#x4F5C;MARK&#xFF0C;&#x4EE5;&#x53CA;10&#x4E2A;&#x6D4B;&#x8BD5;&#x70B9;&#x3002;</li>
+<li>&#x5728;&#x6D4B;&#x8BD5;&#x70B9;&#x5143;&#x4EF6;&#x5E93;&#x6DFB;&#x52A0;&#x5B9A;&#x4F4D;&#x7B97;&#x6CD5;&#x7A97;&#x53E3;&#xFF0C; &#x53EF;&#x4EE5;&#x9009;&#x62E9;&#xFF1A;&#x5706;&#x4FA6;&#x6D4B;&#x3001;&#x6A21;&#x677F;&#x5339;&#x914D;&#x3001;&#x6700;&#x5927;&#x503C;&#x3001;&#x6700;&#x5C0F;&#x503C;&#x7B49;&#xFF0C;&#x5C3D;&#x91CF;&#x4FDD;&#x8BC1;&#x7A97;&#x53E3;&#x68C0;&#x6D4B;&#x7A33;&#x5B9A;&#x3002;</li>
+<li>&#x5728;&#x5B9A;&#x4F4D;&#x7A97;&#x53E3;&#x4E0B;&#x4E00;&#x7EA7;&#x6DFB;&#x52A0;&#x76F8;&#x5BF9;&#x504F;&#x79FB;&#x7A97;&#x53E3;&#xFF0C;&#x5E76;&#x52FE;&#x9009;<em><strong><code style="white-space:nowrap">&#x63D0;&#x4EA4;&#x5230;SPC</code></strong></em>&#x3002;</li>
+<li>&#x7531;3&#x4E2A;&#x64CD;&#x4F5C;&#x5458;&#xFF0C;&#x5206;&#x522B;&#x5404;&#x81EA;&#x6D4B;&#x8BD5;&#x8BE5;PCB&#x677F;3&#x6B21;&#xFF0C;&#x5E76;&#x63D0;&#x4EA4;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x6D4F;&#x89C8;&#x7F51;&#x9875;&#x7248;&#x62A5;&#x8868;&#xFF0C;&#x70B9;&#x51FB;<strong> [ &#x504F;&#x79FB; ] </strong>&#x2192;<strong> [ GR&amp;R-X ] </strong>&#x6216;&#x8005;<strong> [ GR&amp;R-Y ] </strong>&#x5373;&#x53EF;&#x67E5;&#x770B;&#x6D4B;&#x91CF;&#x7ED3;&#x679C;&#x3002;</li>
+</ol>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<ol>
+<li>&#x6D4B;&#x8BD5;&#x540E;&#x9700;&#x63D0;&#x4EA4;&#x5E76;&#x5728;&#x7EF4;&#x4FEE;&#x5DE5;&#x4F5C;&#x7AD9;&#x786E;&#x8BA4;&#x3002;</li>
+<li>GR&amp;R&#x6D4B;&#x91CF;&#x5FC5;&#x987B;&#x4E3A;10*9=90&#x7EC4;&#x504F;&#x79FB;&#x6570;&#x636E;&#x3002;</li>
+</ol>
+<h3 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h3>
+<p>GR&amp;R&#x6D4B;&#x91CF;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;Tolerance=0.5mm&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;url&#x5730;&#x5740;&#x91CC;&#x8BBE;&#x7F6E;<em><strong><code style="white-space:nowrap">maxoffset</code></strong></em>&#x6765;&#x4FEE;&#x6539;&#x3002;&#x4EE5;Tolerance=0.2mm&#xFF0C;&#x51C6;&#x8BB8;&#x504F;&#x79FB;&#x503C;&#x4E3A;&#xB1;0.1mm&#x4E3A;&#x4F8B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;url&#x5730;&#x5740;&#x540E;&#x6DFB;&#x52A0;&#x201C;maxoffset=0.1&#x201D;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../.md" class="navigation navigation-prev " aria-label="Previous page: 其它功能">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cpandcpk.html" class="navigation navigation-next " aria-label="Next page: Cp&Cpk测量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GR&R测量","level":"1.7.1","depth":2,"next":{"title":"Cp&Cpk测量","level":"1.7.2","depth":2,"path":"其它功能/cpandcpk.md","ref":"其它功能/cpandcpk.md","articles":[]},"previous":{"title":"其它功能","level":"1.7","depth":1,"path":".md","ref":".md","articles":[{"title":"GR&R测量","level":"1.7.1","depth":2,"path":"其它功能/GR&R测量.md","ref":"其它功能/GR&R测量.md","articles":[]},{"title":"Cp&Cpk测量","level":"1.7.2","depth":2,"path":"其它功能/cpandcpk.md","ref":"其它功能/cpandcpk.md","articles":[]},{"title":"停机报警","level":"1.7.3","depth":2,"path":"其它功能/停机报警.md","ref":"其它功能/停机报警.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf.fontFamily":"Serif","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"其它功能/GR&R测量.md","mtime":"2017-10-11T11:18:05.416Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-22T07:46:00.215Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

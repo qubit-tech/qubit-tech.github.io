@@ -1,0 +1,1040 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何使用电阻值识别算法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../图像处理/" />
+    
+    
+    <link rel="prev" href="多料号共用一料库.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kuai-su-ru-men.html">
+            
+                <a href="../kuai-su-ru-men.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../程序制作流程.html">
+            
+                <a href="../程序制作流程.html">
+            
+                    
+                    程序制作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../编程参考.html">
+            
+                <a href="../编程参考.html">
+            
+                    
+                    编程参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="yuan.html">
+            
+                <a href="yuan.html">
+            
+                    
+                    制作常见元件检测库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="制作常见元件检测库/制作电阻检测库.html">
+            
+                <a href="制作常见元件检测库/制作电阻检测库.html">
+            
+                    
+                    制作电阻、电容检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="制作常见元件检测库/制作mark检测库.html">
+            
+                <a href="制作常见元件检测库/制作mark检测库.html">
+            
+                    
+                    制作mark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="制作常见元件检测库/制作二极管检测库.html">
+            
+                <a href="制作常见元件检测库/制作二极管检测库.html">
+            
+                    
+                    制作二极管检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="制作常见元件检测库/制作三极管检测库.html">
+            
+                <a href="制作常见元件检测库/制作三极管检测库.html">
+            
+                    
+                    制作三极管检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="制作常见元件检测库/制作IC检测库.html">
+            
+                <a href="制作常见元件检测库/制作IC检测库.html">
+            
+                    
+                    制作IC检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="制作常见元件检测库/制作BGA检测库.html">
+            
+                <a href="制作常见元件检测库/制作BGA检测库.html">
+            
+                    
+                    制作BGA检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="制作常见元件检测库/制作BadMark检测库.html">
+            
+                <a href="制作常见元件检测库/制作BadMark检测库.html">
+            
+                    
+                    制作BadMark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="制作常见元件检测库/制作SideMark检测库.html">
+            
+                <a href="制作常见元件检测库/制作SideMark检测库.html">
+            
+                    
+                    制作SideMark检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="导入CAD.html">
+            
+                <a href="导入CAD.html">
+            
+                    
+                    导入CAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="编辑CAD.html">
+            
+                <a href="编辑CAD.html">
+            
+                    
+                    编辑CAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="整板侦测.html">
+            
+                <a href="整板侦测.html">
+            
+                    
+                    如何使用整板侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="如何管理检测库.html">
+            
+                <a href="如何管理检测库.html">
+            
+                    
+                    如何管理检测库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="多料号共用一料库.html">
+            
+                <a href="多料号共用一料库.html">
+            
+                    
+                    多料号共用一料库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="如何使用电阻值识别算法.html">
+            
+                <a href="如何使用电阻值识别算法.html">
+            
+                    
+                    如何使用电阻值识别算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../图像处理/">
+            
+                <a href="../图像处理/">
+            
+                    
+                    图像处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../图像处理/IPE参考.html">
+            
+                <a href="../图像处理/IPE参考.html">
+            
+                    
+                    IPE参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../算法参考/README.md">
+            
+                <span>
+            
+                    
+                    算法参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../算法参考/圆侦测.html">
+            
+                <a href="../算法参考/圆侦测.html">
+            
+                    
+                    圆侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../算法参考/模板匹配.html">
+            
+                <a href="../算法参考/模板匹配.html">
+            
+                    
+                    模板匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../算法参考/最大值.html">
+            
+                <a href="../算法参考/最大值.html">
+            
+                    
+                    最大值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../算法参考/亮度抽取.html">
+            
+                <a href="../算法参考/亮度抽取.html">
+            
+                    
+                    亮度抽取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../算法参考/智能侦测.html">
+            
+                <a href="../算法参考/智能侦测.html">
+            
+                    
+                    智能侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../算法参考/智能判定.html">
+            
+                <a href="../算法参考/智能判定.html">
+            
+                    
+                    智能判定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../算法参考/最小值.html">
+            
+                <a href="../算法参考/最小值.html">
+            
+                    
+                    最小值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../算法参考/平均值.html">
+            
+                <a href="../算法参考/平均值.html">
+            
+                    
+                    平均值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../算法参考/极差值.html">
+            
+                <a href="../算法参考/极差值.html">
+            
+                    
+                    极差值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../算法参考/条码识别.html">
+            
+                <a href="../算法参考/条码识别.html">
+            
+                    
+                    条码识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../算法参考/字符识别.html">
+            
+                <a href="../算法参考/字符识别.html">
+            
+                    
+                    字符识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../算法参考/极性检测.html">
+            
+                <a href="../算法参考/极性检测.html">
+            
+                    
+                    极性检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../算法参考/字符验证.html">
+            
+                <a href="../算法参考/字符验证.html">
+            
+                    
+                    字符验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../算法参考/桥连侦测.html">
+            
+                <a href="../算法参考/桥连侦测.html">
+            
+                    
+                    桥连侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="../算法参考/刮痕侦测.html">
+            
+                <a href="../算法参考/刮痕侦测.html">
+            
+                    
+                    刮痕侦测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="../算法参考/相对偏移.html">
+            
+                <a href="../算法参考/相对偏移.html">
+            
+                    
+                    相对偏移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="../算法参考/电阻值识别.html">
+            
+                <a href="../算法参考/电阻值识别.html">
+            
+                    
+                    电阻值识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" data-path="../算法参考/整板侦测%28+%29.md">
+            
+                <span>
+            
+                    
+                    整板侦测(+)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" data-path="../算法参考/整板侦测%28-%29.html">
+            
+                <a href="../算法参考/整板侦测%28-%29.html">
+            
+                    
+                    整板侦测(-)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" data-path="../算法参考/共线性检测.html">
+            
+                <a href="../算法参考/共线性检测.html">
+            
+                    
+                    共线性检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.21" data-path="../算法参考/子元件生成.html">
+            
+                <a href="../算法参考/子元件生成.html">
+            
+                    
+                    子元件生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.22" data-path="../算法参考/计算值.html">
+            
+                <a href="../算法参考/计算值.html">
+            
+                    
+                    计算值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../用户与权限管理.html">
+            
+                <a href="../用户与权限管理.html">
+            
+                    
+                    用户与权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../.md">
+            
+                <span>
+            
+                    
+                    其它功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../其它功能/GR&R测量.html">
+            
+                <a href="../其它功能/GR&R测量.html">
+            
+                    
+                    GR&R测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../其它功能/cpandcpk.html">
+            
+                <a href="../其它功能/cpandcpk.html">
+            
+                    
+                    Cp&Cpk测量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../其它功能/停机报警.html">
+            
+                <a href="../其它功能/停机报警.html">
+            
+                    
+                    停机报警
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../.md">
+            
+                <span>
+            
+                    
+                    菜单项参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../菜单项参考/AOI主菜单.html">
+            
+                <a href="../菜单项参考/AOI主菜单.html">
+            
+                    
+                    AOI主菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../菜单项参考/主页选项卡.html">
+            
+                <a href="../菜单项参考/主页选项卡.html">
+            
+                    
+                    主页选项卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../使用维修工作站.md">
+            
+                <span>
+            
+                    
+                    使用维修工作站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../词汇表.html">
+            
+                <a href="../词汇表.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如何使用电阻值识别算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;&#x7B97;&#x6CD5;">&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;&#x7B97;&#x6CD5;</h2>
+<p> <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x7B97;&#x6CD5;&#x91C7;&#x7528;&#x6700;&#x65B0;&#x7684;&#x4EBA;&#x5DE5;&#x667A;&#x80FD;&#x6280;&#x672F;&#xFF0C;&#x901A;&#x8FC7;&#x8BC6;&#x522B;&#x7535;&#x963B;&#x4E0A;&#x5370;&#x5237;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;&#x7535;&#x963B;&#x7684;&#x7CBE;&#x786E;&#x963B;&#x503C;&#x548C;&#x7535;&#x6C14;&#x7279;&#x6027;&#x3002;&#x8BE5;&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x7535;&#x963B;&#x9519;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5339;&#x914D;&#x66FF;&#x4EE3;&#x6599;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x672C;&#x7AE0;&#x8282;&#x63D0;&#x4F9B; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x7B97;&#x6CD5;&#x7684;&#x4F7F;&#x7528;&#x6307;&#x5BFC;&#x548C;&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x6307;&#x5BFC;">&#x4F7F;&#x7528;&#x6307;&#x5BFC;</h3>
+<ul>
+<li><p>&#x4E3A;&#x4E86;&#x7CBE;&#x51C6;&#x5730;&#x5B9A;&#x4F4D;&#x5230;&#x5143;&#x4EF6;&#x7684;&#x672C;&#x4F53;&#x90E8;&#x5206;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x5B9A;&#x4F4D;&#x7B97;&#x6CD5;&#xFF0C;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x9009;&#x62E9; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x6A21;&#x677F;&#x5339;&#x914D;.html">&#x6A21;&#x677F;&#x5339;&#x914D;</a> &#x7B97;&#x6CD5;&#x3002;&#x7531;&#x4E8E;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7535;&#x963B;&#x5143;&#x4EF6;&#x672C;&#x4F53;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5DEE;&#x5F02;&#xFF0C;&#x4E3A;&#x4E86;&#x66F4;&#x7CBE;&#x51C6;&#x7684;&#x5B9A;&#x4F4D;&#x5143;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4F7F;&#x7528; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x6A21;&#x677F;&#x5339;&#x914D;.html">&#x6A21;&#x677F;&#x5339;&#x914D;</a> &#x7B97;&#x6CD5;&#x65F6;&#xFF0C;&#x91C7;&#x96C6;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7535;&#x5B50;&#x5143;&#x4EF6;&#x7684;&#x6A21;&#x677F;&#x3002;</p>
+</li>
+<li><p><a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x68C0;&#x6D4B;&#x7A97;&#x53E3;&#x5C06;&#x4F5C;&#x4E3A;&#x5B9A;&#x4F4D;&#x7B97;&#x6CD5;&#x7A97;&#x53E3;&#x7684;&#x5B50;&#x7A97;&#x53E3;&#x3002; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x68C0;&#x6D4B;&#x7A97;&#x53E3;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x9700;&#x8981;&#x5B8C;&#x5168;&#x5305;&#x542B;&#x7535;&#x963B;&#x4E0A;&#x5370;&#x5237;&#x7684;&#x5B57;&#x7B26;&#x90E8;&#x5206;&#xFF0C;&#x4E14;&#x5C3D;&#x91CF;&#x4E0D;&#x5305;&#x542B;&#x7535;&#x6781;&#xFF0C;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;&#x6BD4;&#x5B57;&#x7B26;&#x7565;&#x5927;&#xFF0C;&#x6BD4;&#x7535;&#x963B;&#x672C;&#x4F53;&#x7565;&#x5C0F;&#x3002;</p>
+</li>
+<li><p>&#x9009;&#x7528;&#x5408;&#x9002;&#x7684;IPE&#x5C3D;&#x91CF;&#x51F8;&#x663E;&#x5B57;&#x7B26;&#xFF0C;&#x907F;&#x514D;&#x5E72;&#x6270;&#x3002;&#x4E00;&#x822C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#xFF1A;<strong><code style="white-space:nowrap">g</code></strong>&#x3001;<strong><code style="white-space:nowrap">b</code></strong>&#x3001;<strong><code style="white-space:nowrap">g+b</code></strong> &#x3001;<strong><code style="white-space:nowrap">g+b-r</code></strong>&#x7B49;IPE&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x5C1D;&#x8BD5;&#x53D6;&#x6700;&#x4F73;&#x3002;&#x7531;&#x4E8E;AOI&#x8BBE;&#x5907;&#x4E00;&#x822C;&#x91C7;&#x7528;RGB&#x4E09;&#x8272;&#x5149;&#x6E90;&#x6210;&#x50CF;&#xFF0C;&#x7EA2;&#x8272;&#x5149;&#x4E3A;&#x9876;&#x90E8;&#x5149;&#xFF0C;&#x6240;&#x4EE5;&#x7535;&#x963B;&#x7535;&#x6781;&#x90E8;&#x5206;&#x56FE;&#x50CF;&#x53EF;&#x80FD;&#x4F1A;&#x504F;&#x7EA2;&#xFF0C;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x6392;&#x9664;&#x7535;&#x6781;&#x7684;&#x5E72;&#x6270;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<strong><code style="white-space:nowrap">g+b-r</code></strong>&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7535;&#x963B;&#x7684;&#x56FE;&#x50CF;&#x5728;&#x9009;&#x62E9;&#x4E0D;&#x540C;IPE&#x65F6;&#x7684;&#x6548;&#x679C;&#xFF1A;</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>IPE</th>
+<th>&#x56FE;&#x4F8B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code style="white-space:nowrap">rgb</code></strong></td>
+<td><img src="../assets/&#x7535;&#x963B; rgb.png" alt=""></td>
+<td>&#x539F;&#x59CB;&#x56FE;&#x50CF;</td>
+</tr>
+<tr>
+<td><strong><code style="white-space:nowrap">r</code></strong></td>
+<td><img src="../assets/&#x7535;&#x963B; r.png" alt=""></td>
+<td>&#x4E0E;&#x5B57;&#x7B26;&#x90E8;&#x5206;&#x76F8;&#x6BD4;&#xFF0C;&#x7535;&#x6781;&#x90E8;&#x5206;&#x4EAE;&#x5EA6;&#x8F83;&#x9AD8;</td>
+</tr>
+<tr>
+<td><strong><code style="white-space:nowrap">g</code></strong></td>
+<td><img src="../assets/&#x7535;&#x963B; g.png" alt=""></td>
+<td>&#x7535;&#x6781;&#x90E8;&#x5206;&#x6BD4;&#x5B57;&#x7B26;&#x90E8;&#x5206;&#x4EAE;&#x5EA6;&#x4F4E;</td>
+</tr>
+<tr>
+<td><strong><code style="white-space:nowrap">b</code></strong></td>
+<td><img src="../assets/&#x7535;&#x963B; b.png" alt=""></td>
+<td>&#x7535;&#x6781;&#x90E8;&#x5206;&#x6BD4;&#x5B57;&#x7B26;&#x90E8;&#x5206;&#x4EAE;&#x5EA6;&#x4F4E;</td>
+</tr>
+<tr>
+<td><strong><code style="white-space:nowrap">g+b-r</code></strong></td>
+<td><img src="../assets/&#x7535;&#x963B; g+b-r.png" alt=""></td>
+<td>&#x5B57;&#x7B26;&#x90E8;&#x5206;&#x88AB;&#x5B8C;&#x7F8E;&#x51F8;&#x663E;&#x51FA;&#x6765;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>&#x6839;&#x636E;&#x7535;&#x963B;&#x5143;&#x4EF6;&#x672C;&#x4F53;&#x4E0A;&#x5370;&#x5237;&#x7684;&#x5B57;&#x7B26;&#x8BBE;&#x7F6E;&#x5B57;&#x7B26;&#x6A21;&#x677F;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5982;&#x679C;&#x5370;&#x5237;&#x5B57;&#x7B26;&#x4E3A;<strong>300</strong>&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x5B57;&#x7B26;&#x6A21;&#x677F;<em><strong><code style="white-space:nowrap">330</code></strong></em>&#xFF1B;&#x5982;&#x679C;&#x5370;&#x5237;&#x5B57;&#x7B26;&#x4E3A;<strong>3<u>3</u>0</strong>&#xFF0C;&#x5B57;&#x7B26;&#x6A21;&#x677F;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#xFF1A;<em><strong><code style="white-space:nowrap">330_</code></strong></em>&#xFF1B;&#x800C;<strong><u>330</u></strong>&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x4E0B;&#x5212;&#x7EBF;<em><strong><code style="white-space:nowrap">330__</code></strong></em>&#x3002;&#x3000;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x7684; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x68C0;&#x6D4B;&#x7A97;&#x53E3;&#x6765;&#x7EDF;&#x4E00;&#x68C0;&#x6D4B;&#x4E0D;&#x540C;&#x963B;&#x503C;&#x7684;&#x7535;&#x963B;&#x5143;&#x4EF6;&#xFF0C;&#x6B64;&#x65F6;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E; <a href="../&#x7B97;&#x6CD5;&#x53C2;&#x8003;/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;.html">&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;</a> &#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x6A21;&#x677F;&#xFF0C;&#x7B97;&#x6CD5;&#x5C06;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x5143;&#x4EF6;&#x6807;&#x7B7E;&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x6A21;&#x677F;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7535;&#x963B;&#x5143;&#x4EF6;&#x7684;&#x6807;&#x7B7E;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5BF9;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x7535;&#x963B;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x68C0;&#x6D4B;&#x5E93;&#xFF0C;&#x7531;&#x4E8E;&#x5143;&#x4EF6;&#x672C;&#x4F53;&#x4E0A;&#x5B57;&#x7B26;&#x5927;&#x5C0F;&#x4E0D;&#x540C;&#xFF0C;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7531;&#x4E8E;&#x68C0;&#x6D4B;&#x7A97;&#x53E3;&#x7684;&#x5927;&#x5C0F;&#x4E0E;&#x5B57;&#x7B26;&#x5927;&#x5C0F;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6216;&#x8005;&#x7531;&#x4E8E;IPE&#x7684;&#x9009;&#x62E9;&#x5BF9;&#x4E0D;&#x540C;&#x7535;&#x963B;&#x6548;&#x679C;&#x4E0D;&#x540C;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x7535;&#x963B;&#x5143;&#x4EF6;&#x51FA;&#x73B0;&#x8BEF;&#x62A5;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x7EC4;&#x6765;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;</p>
+<p> <strong>&#x793A;&#x4F8B;</strong>&#xFF1A; &#x5728;&#x6B64;&#x4F8B;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;<strong>&#x7535;&#x963B;1000</strong>&#x521A;&#x597D;&#x5408;&#x9002;&#x7684;&#x68C0;&#x67E5;&#x7A97;&#x53E3;&#xFF0C;&#x5BF9;<strong>&#x7535;&#x963B;1501</strong>&#x5219;&#x592A;&#x5927;&#x4E86;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;<strong>&#x7535;&#x963B;1501</strong>&#x4EA7;&#x751F;&#x4E86;&#x8BEF;&#x62A5;&#xFF1B;&#x800C;&#x9002;&#x5408;<strong>&#x7535;&#x963B;1501</strong>&#x7684;&#x68C0;&#x67E5;&#x7A97;&#x53E3;&#xFF0C;&#x5BF9;&#x4E8E;<strong>&#x7535;&#x963B;1000</strong>&#x5219;&#x592A;&#x5C0F;&#x4E86;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x8C03;&#x6574;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x5408;&#x9002;2&#x79CD;&#x5143;&#x4EF6;&#x7684;&#x7A97;&#x53E3;&#x5C3A;&#x5BF8;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x8C03;&#x6574;&#x7A97;&#x53E3;&#x5927;&#x5C0F;&#x6765;&#x517C;&#x5BB9;2&#x79CD;&#x5143;&#x4EF6;&#xFF0C;&#x8981;&#x89E3;&#x51B3;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;2&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x68C0;&#x6D4B;&#x7A97;&#x53E3;&#xFF0C;&#x5206;&#x522B;&#x5C5E;&#x4E8E;2&#x4E2A;&#x903B;&#x8F91;&#x7EC4;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x7EC4;&#x901A;&#x8FC7;&#x68C0;&#x6D4B;&#xFF0C;&#x5219;&#x5143;&#x4EF6;&#x901A;&#x8FC7;&#x68C0;&#x6D4B;&#x3002;</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x68C0;&#x6D4B;&#x7A97;&#x53E3;1</td>
+<td><img src="../assets/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;-&#x7A97;&#x53E3;&#x5408;&#x9002;-1000.png" alt=""></td>
+<td><img src="../assets/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;-&#x7A97;&#x53E3;&#x592A;&#x5927;-1501.png" alt=""></td>
+</tr>
+<tr>
+<td>&#x68C0;&#x6D4B;&#x7A97;&#x53E3;2</td>
+<td><img src="../assets/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;-&#x7A97;&#x53E3;&#x5408;&#x9002;-1501.png" alt=""></td>
+<td><img src="../assets/&#x7535;&#x963B;&#x503C;&#x8BC6;&#x522B;-&#x7A97;&#x53E3;&#x592A;&#x5C0F;-1000.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="多料号共用一料库.html" class="navigation navigation-prev " aria-label="Previous page: 多料号共用一料库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../图像处理/" class="navigation navigation-next " aria-label="Next page: 图像处理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何使用电阻值识别算法","level":"1.3.7","depth":2,"next":{"title":"图像处理","level":"1.4","depth":1,"path":"图像处理/README.md","ref":"图像处理/README.md","articles":[{"title":"IPE参考","level":"1.4.1","depth":2,"path":"图像处理/IPE参考.md","ref":"图像处理/IPE参考.md","articles":[]}]},"previous":{"title":"多料号共用一料库","level":"1.3.6","depth":2,"path":"编程参考/多料号共用一料库.md","ref":"编程参考/多料号共用一料库.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf.fontFamily":"Serif","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"编程参考/如何使用电阻值识别算法.md","mtime":"2017-06-21T09:04:55.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-22T07:46:00.215Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
